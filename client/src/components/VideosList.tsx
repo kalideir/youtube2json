@@ -128,7 +128,7 @@ const VideosList = () => {
           <Button
             type="primary"
             shape="round"
-            disabled={started}
+            // disabled={started}
             onClick={
               !started
                 ? () => {
@@ -143,7 +143,7 @@ const VideosList = () => {
             Select Long
           </Button>
           <Button
-            disabled={started}
+            // disabled={started}
             type="primary"
             shape="round"
             onClick={
