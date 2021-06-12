@@ -14,11 +14,15 @@ class ChannelScraper:
         self.driver.get(url)
 
         ht = self.driver.execute_script("return document.documentElement.scrollHeight;")
+        i = 0
         while True:
             prev_ht = self.driver.execute_script("return document.documentElement.scrollHeight;")
             self.driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
             time.sleep(2)
             ht = self.driver.execute_script("return document.documentElement.scrollHeight;")
+            i += 1
+            if i == 30:
+                break
             if prev_ht == ht:
                 break
 

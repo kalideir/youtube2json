@@ -22,7 +22,7 @@ const NavBar = () => {
           </button>
           <Link to="/">
             <h4 className="header-title">
-              <span>YouTube2Topics</span>
+              <span>YouTube2JSON</span>
             </h4>
           </Link>
         </div>
