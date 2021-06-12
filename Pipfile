@@ -1,0 +1,32 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+djangorestframework = "*"
+django-cors-headers = "*"
+pandas = "*"
+numpy = "*"
+channels = "*"
+psycopg2 = "*"
+openpyxl = "*"
+channels-redis = "*"
+selenium = "*"
+requests = "==2.24.0"
+mock = "==3.0.5"
+httpretty = "==0.9.7"
+coverage = "==5.2.1"
+coveralls = "==1.11.1"
+Django = "*"
+
+[dev-packages]
+
+[scripts]
+server = "python manage.py runserver"
+makemigrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+csu = "python manage.py createsuperuser"
+
+[requires]
+python_version = "3.8"
