@@ -4,6 +4,7 @@ Youtube2JSON
 
 Fetch the transcript of all the Youtube videos in a channel, built with channels and youtube-transcript-api
 
+<img src="/images/image.png" />
 
 ## Installation
 
