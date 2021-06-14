@@ -19,6 +19,7 @@ httpretty = "==0.9.7"
 coverage = "==5.2.1"
 coveralls = "==1.11.1"
 Django = "*"
+youtube-transcript-api = "*"
 
 [dev-packages]
 

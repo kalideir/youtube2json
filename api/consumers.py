@@ -8,7 +8,6 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 import io
 from .Scraper import ChannelScraper
 import sys
-sys.path.append('./youtube-transcript-api')
 
 from youtube_transcript_api import YouTubeTranscriptApi
 

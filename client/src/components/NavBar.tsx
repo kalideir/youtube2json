@@ -4,8 +4,7 @@ import {Link, useLocation } from 'react-router-dom'
 const NavBar = () => {
   const location = useLocation ();
   const routes = [
-    {path: '/', name: 'Dashboard'},
-    {path: '/new-session', name: 'New Session'},
+    {path: '/', name: 'New Session'},
   ]
   return (
     <nav className="navbar">
