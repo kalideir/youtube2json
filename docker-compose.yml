@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+    web:
+      build: .
+      restart: unless-stopped
+      command: >
+        bash -c "python manage.py runserver 0.0.0.0:8001"
+      tty: true
+      stdin_open: true
+      volumes:
+        - .:/usr/src/app
+      ports:
+        - 8001:8001
+      dns:
+        - 8.8.8.8
+    client:
+      build: ./client
+      command: ["npm", "start"]
+      volumes:
+        - ./client:/usr/src/client
+        - node-modules:/usr/src/client/node_modules
+      ports:
+        - "3000:3000"
+
+    redis:
+        image: "redis:alpine"
+        ports: 
+        - "6379:6379"
+volumes:
+  node-modules:
